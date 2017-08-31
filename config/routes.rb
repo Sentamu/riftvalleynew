@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reserves
   get 'welcome/homepage'
   get 'welcome/acc'
   get 'welcome/gal'
