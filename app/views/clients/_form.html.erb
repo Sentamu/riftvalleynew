@@ -53,7 +53,12 @@
     <%= f.label :Adults %><br>
     <%= f.number_field :adults, class: "form-control" %>
   </div>
+   
 
+   <div class="control-group">
+    <%= f.label :Rooms, class: 'control-label' %><br>
+    <%= f.collection_select( :client, :employee_id, Employee.all, :id, :name, {}, { :multiple => false } )  %>
+  </div>
 
 
   <div class="form-group">
