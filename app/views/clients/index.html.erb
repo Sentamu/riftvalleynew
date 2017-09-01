@@ -99,7 +99,6 @@
         <p>Number Of Rooms: <%= client.rooms %></p>
         <p>Number Of Adults: <%= client.adults %></p>
         <p>Other Details: <%= client.message %></p>
-        <p>Room Type: <%= client.employee.name %></p>
         <p><% link_to 'Show', client %></p>
         <p><% link_to 'Edit', edit_client_path(client) %></p>
         <p><%= link_to 'Delete', client, method: :delete, data: { confirm: 'Are you sure?' } %></p>
