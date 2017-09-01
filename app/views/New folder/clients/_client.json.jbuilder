@@ -1,2 +1,0 @@
-json.extract! client, :id, :name, :email, :tel, :start, :end, :rooms, :adults, :message, :created_at, :updated_at
-json.url client_url(client, format: :json)

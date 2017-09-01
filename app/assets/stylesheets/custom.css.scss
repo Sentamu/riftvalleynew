@@ -1,7 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
 html,
 body {
   height: 100%;
@@ -10,6 +9,7 @@ body {
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+
 hr {
   border-color: #F05F40;
   border-width: 3px;
@@ -369,5 +369,3 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
-
-
