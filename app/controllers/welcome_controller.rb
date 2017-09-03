@@ -13,4 +13,7 @@ class WelcomeController < ApplicationController
 
   def act
   end
+
+  def promo
+  end
 end
