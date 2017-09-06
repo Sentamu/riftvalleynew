@@ -47,11 +47,11 @@
    <div class="col-lg-6 col-sm-12">
   <div class="form-group">
     <%= f.label :Children_Below_5 %><br>
-    <%= f.number_field :rooms, class: "form-control" %>
+    <%= f.number_field :rooms, min: 0, class: "form-control" %>
   </div>
  <div class="form-group">
     <%= f.label :Adults %><br>
-    <%= f.number_field :adults, class: "form-control" %>
+    <%= f.number_field :adults, min: 0 class: "form-control" %>
   </div>
    
 
@@ -59,7 +59,7 @@
     <%= f.label :Rooms, class: 'control-label' %><br>
     <%= collection_select( :client, :employee_id, Employee.all, :id, :name, {}, { :multiple => false } )  %>
   </div>
-
+   </br>
 
   <div class="form-group">
     <%= f.label :Other_Additional_Facilities_If_Required %><br>

@@ -16,4 +16,7 @@ class WelcomeController < ApplicationController
 
   def promo
   end
+
+  def dine
+  end
 end

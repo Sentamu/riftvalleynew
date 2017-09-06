@@ -50,13 +50,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="homepage.html#about">About</a>
-                    </li>
-                   <li>
                         <a class="page-scroll" href="/welcome/acc">Accomodation</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/welcome/act">Things To Do</a>
+                        <a class="page-scroll" href="/welcome/act">Activities</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/clients/new">Reservations</a>
@@ -65,22 +62,21 @@
                         <a class="page-scroll" href="/welcome/loc">Location</a>
                     </li>
                     <li>
-                       <a class="page-scroll" href="/welcome/gal">Gallery</a>
+                       <a class="page-scroll" href="/welcome/gal">Gallery/News</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/welcome/promo">Promotions</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="/welcome/dine">Bar and Dining</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
 
-                    <li><%= link_to "Sign In", new_user_session_path %></li>
-                    </li>
                     
-                    <% if user_signed_in? %>
-                    <li><a class="page-scroll" href="/clients">Messages</a></li>
-                    <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
-                    <% end %>
+                    
+                    
                 </div>
 
                 </ul>
