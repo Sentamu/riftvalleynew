@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'welcome/act'
   get 'welcome/promo'
   get 'welcome/dine'
+  get 'welcome/nav'
 
 
   root 'welcome#homepage'

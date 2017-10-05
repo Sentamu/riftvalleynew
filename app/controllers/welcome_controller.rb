@@ -19,4 +19,7 @@ class WelcomeController < ApplicationController
 
   def dine
   end
+
+  def nav
+  end
 end

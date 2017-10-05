@@ -1,0 +1,55 @@
+<nav class="navbar navbar-inverse cont">
+  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+          <ul>
+
+                 <li><a class="navbar-brand" href="/pages/home" style="color: #F0A700">
+                 <!--New Legacy-->
+                 <%= link_to image_tag("logo.jpg") %>
+
+                
+                 </a>
+                   
+                 </li>
+                 </ul>
+                 
+
+     </div>
+
+           <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+
+         <li><a href="/pages/home" style="color: #F0A700">Home</a></li>
+         <li><a href="/pages/product" style="color: #F0A700">Products</a></li>
+         <li><a href="/listings" style="color: #F0A700">Shop Now</a></li>
+         <li><a href="/pages/membership" style="color: #F0A700">Membership</a></li>
+         <li><a href="#" style="color: #F0A700">Trainings</a></li>
+
+        
+         
+         
+        <% if user_signed_in? %>
+         <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+         
+         <% else %>
+
+        <li><% link_to "Sign Up", new_user_registration_path %></li>
+        <li><%= link_to "Sign In", new_user_session_path %></li>
+       
+       <% end %>
+         
+
+
+   </ul>
+    </div>
+  </div>
+</nav
